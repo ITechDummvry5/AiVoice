@@ -23,23 +23,27 @@
 
     <!-- HEADER -->
     <div class="header">
-      <h1><a href="/assets/images/smile.png">NOVA <i class="fas fa-robot"></i></a></h1>
+      <h1><a href="#">NOVA CHATBOT<i class="fas fa-robot"></i></a></h1>
     </div>
 
 <!-- CHATBOX -->
 <div class="chat-container">
-
+  <div id="suggestions" class="suggestions"></div>
 
   <div id="responseBox">  <!-- Loader / Status -->
   <div id="statusBox" style="color:#FFD700; margin-bottom:5px; font-style:italic;"></div></div>
-  <input type="text" id="textInput" placeholder="Type here..." />
-  <button onclick="sendText()">Send</button>
-  <button id="voiceBtn" onclick="startVoice()"> Speak</button>
+<input type="text" id="textInput" placeholder="Type here..." autocomplete="off" />
+
+<button onclick="sendText()">Send</button>
+<button id="voiceBtn" onclick="startVoice()">Speak</button>
+
 
   <!-- Voice Selector -->
   <select id="voiceSelect">
     <option value="">Select Voice</option>
   </select>
+
+
 </div>
 
 
